@@ -1,0 +1,7 @@
+pyperclip
+pynput
+pyautogui
+kivy
+kivymd
+
+
