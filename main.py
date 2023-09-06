@@ -2,11 +2,16 @@ import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.uix.floatlayout import FloatLayout
+from kivy.config import Config
 import pyperclip
 import pyautogui
 import pynput
 from pynput import keyboard
 from pynput.keyboard import Key, Controller
+
+Config.set('graphics', 'width', '600')
+Config.set('graphics', 'height', '300')
+
 kivy.require('2.1.0')
 
 keyboard = Controller()
@@ -26,7 +31,7 @@ class ToodKeppApp(App):
 
 
 
-# Press the green button in the gutter to run the script.
+# Press the green Button in the gutter to run the script.
 if __name__ == '__main__':
     ToodKeppApp().run()
 
