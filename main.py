@@ -11,16 +11,21 @@ from pynput.keyboard import Key, Controller
 
 Config.set('graphics', 'width', '600')
 Config.set('graphics', 'height', '300')
+Config.set('graphics', 'borderless', '1')
 
 kivy.require('2.1.0')
 
 keyboard = Controller()
 class VirtualKeyboard(FloatLayout):
     pass
+class ButtonSet(FloatLayout):
+    pass
+
 
 class ToodKeppApp(App):
     def build(self):
         return VirtualKeyboard()
+        return ButtonSet()
     def callback(self, instance):
         KeyCode = instance.text
         try:
@@ -28,7 +33,10 @@ class ToodKeppApp(App):
             print(f"{KeyCode} has been copied.")
         except Exception as e:
             print(e)
-
+    def end(self, instance):
+        ToodKeppApp.stop(self)
+    def minimize(self, instance):
+        ToodKeppApp.get_running_app().root_window.minimize()
 
 
 # Press the green Button in the gutter to run the script.
