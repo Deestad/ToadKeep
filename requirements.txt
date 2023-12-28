@@ -3,5 +3,6 @@ pynput
 pyautogui
 kivy
 kivymd
+kivyMD
 
 
