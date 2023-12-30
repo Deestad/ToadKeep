@@ -447,7 +447,7 @@
             background_normal: 'Button.png'
             background_color: (1, 1, 1, 1)
         Button:
-            id: special4
+            id: special5
             pos_hint: {'center_x': 0.05, 'top': 0.55}
             size_hint: (0.087, 0.150)
             text: "?"
@@ -456,10 +456,19 @@
             background_normal: 'Button.png'
             background_color: (1, 1, 1, 1)
         Button:
-            id: special4
+            id: special6
             pos_hint: {'center_x': 0.13, 'top': 0.55}
             size_hint: (0.087, 0.150)
             text: "/"
+            on_press: app.callback(self)
+            color: 0,0,0,1
+            background_normal: 'Button.png'
+            background_color: (1, 1, 1, 1)
+        Button:
+            id: special7
+            pos_hint: {'center_x': 0.13, 'top': 0.40}
+            size_hint: (0.087, 0.150)
+            text: "*"
             on_press: app.callback(self)
             color: 0,0,0,1
             background_normal: 'Button.png'
