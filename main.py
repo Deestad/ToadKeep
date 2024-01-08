@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import pystray
+import threading
 import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
@@ -11,10 +13,10 @@ import pynput
 from pynput import keyboard
 from pynput.keyboard import Key, Controller
 
+# Configuration
 Config.set('graphics', 'width', '600')
 Config.set('graphics', 'height', '300')
 Config.set('graphics', 'borderless', '1')
-
 kivy.require('2.1.0')
 
 keyboard = Controller()
@@ -24,10 +26,12 @@ class ButtonSet(FloatLayout):
     pass
 
 
+
 class ToodKeppApp(App):
     def build(self):
+        self.icon = 'ToadKeep.ico'
         return VirtualKeyboard()
-        return ButtonSet()
+
     def callback(self, instance):
         KeyCode = instance.text
         try:
@@ -35,8 +39,11 @@ class ToodKeppApp(App):
             print(f"{KeyCode} has been copied.")
         except Exception as e:
             print(e)
+
     def end(self, instance):
         ToodKeppApp.stop(self)
+
+
     def minimize(self, instance):
         ToodKeppApp.get_running_app().root_window.minimize()
 
