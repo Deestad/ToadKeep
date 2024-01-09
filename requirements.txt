@@ -4,5 +4,4 @@ pyautogui
 kivy
 kivymd
 kivyMD
-pystray
 

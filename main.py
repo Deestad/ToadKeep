@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import pystray
 import threading
 import kivy
 from kivy.app import App
