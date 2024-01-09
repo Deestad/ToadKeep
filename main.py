@@ -3,17 +3,18 @@ import os
 import threading
 import kivy
 from kivy.app import App
-from kivy.core.window import Window
 from kivy.uix.widget import Widget
 from kivy.uix.floatlayout import FloatLayout
 from kivy.config import Config
-from KivyOnTop import register_topmost, unregister_topmost
 import pyperclip
 import pyautogui
 import pynput
 from pynput import keyboard
 from pynput.keyboard import Key, Controller
 
+# System specific imports
+if os.name == 'nt':
+    from KivyOnTop import register_topmost, unregister_topmost
 # Configuration
 
 Config.set('graphics', 'width', '600')
@@ -32,13 +33,16 @@ class ButtonSet(FloatLayout):
 
 class ToodKeppApp(App):
     def build(self):
-        Window.set_title('Toad Keep')
-        # Make Window Topmost
-        if os.name == "nt":
-            register_topmost(Window, 'Toad Keep')
+        self.title = 'Toad Keep'
         self.icon = 'ToadKeep.ico'
+        if os.name == "nt":
+            self.win_build()
+
         return VirtualKeyboard()
 
+    def win_build(self):
+        # Make Window Topmost
+        register_topmost(self, 'Toad Keep')
     def callback(self, instance):
         KeyCode = instance.text
         try:
