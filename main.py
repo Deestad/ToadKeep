@@ -1,11 +1,17 @@
 #!/usr/bin/python3
 import os
 import threading
+
+# KIVY
 import kivy
 from kivy.app import App
+from kivy.lang import Builder
 from kivy.uix.widget import Widget
 from kivy.uix.floatlayout import FloatLayout
 from kivy.config import Config
+from kivy.uix.tabbedpanel import TabbedPanel
+
+# Functionality Imports
 import pyperclip
 import pyautogui
 import pynput
@@ -16,6 +22,8 @@ from pynput.keyboard import Key, Controller
 if os.name == 'nt':
     from KivyOnTop import register_topmost, unregister_topmost
 # Configuration
+with open("ToadKeep.kv", encoding='utf-8') as f:
+    Builder.load_string(f.read())
 
 Config.set('graphics', 'width', '600')
 Config.set('graphics', 'height', '300')
@@ -24,11 +32,11 @@ Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
 kivy.require('2.1.0')
 
 keyboard = Controller()
-class VirtualKeyboard(FloatLayout):
+
+class VirtualKeyboard(TabbedPanel):
     pass
 class ButtonSet(FloatLayout):
     pass
-
 
 
 class ToodKeppApp(App):
@@ -37,12 +45,13 @@ class ToodKeppApp(App):
         self.icon = 'ToadKeep.ico'
         if os.name == "nt":
             self.win_build()
-
         return VirtualKeyboard()
+
 
     def win_build(self):
         # Make Window Topmost
         register_topmost(self, 'Toad Keep')
+
     def callback(self, instance):
         KeyCode = instance.text
         try:
@@ -53,7 +62,6 @@ class ToodKeppApp(App):
 
     def end(self, instance):
         ToodKeppApp.stop(self)
-
 
     def minimize(self, instance):
         ToodKeppApp.get_running_app().root_window.minimize()
