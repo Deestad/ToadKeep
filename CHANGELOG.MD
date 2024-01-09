@@ -5,8 +5,6 @@
 - Icon of a cute toad added
 - Asterisk added
 - Executable on Linx
-- Map added for routine planning and events
-- Visual rework
 - Visual rework
 - Requirements
 - Create README.md
