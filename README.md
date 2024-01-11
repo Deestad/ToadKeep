@@ -10,7 +10,7 @@ ToadKeep is not your average, run-of-the-mill keyboard savior. This zany tool fl
 
 ## Features
 
-- **Copy and Paste with Toaditude**: ToadKeep lets you snag characters and paste them anywhere you want, making typing feel so last century.
+- **Copy and Paste with Toaditude**: ToadKeep lets you snag characters and paste them anywhere you want.
 
 - **Effortless Efficiency (Say That Three Times Fast)**: Say ta-ta to keyboard tantrums! ToadKeep whizzes in for a quick and hassle-free character input that's smoother than a buttered slide.
 
