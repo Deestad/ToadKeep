@@ -1,7 +1,12 @@
 #:kivy 2.1.0
 <VirtualKeyboard>
     do_default_tab: False
-
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
     TabbedPanelItem:
         text: "Common"
 
