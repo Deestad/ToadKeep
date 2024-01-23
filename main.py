@@ -1,15 +1,24 @@
 #!/usr/bin/python3
+
 import os
 import threading
 
 # KIVY
 import kivy
 from kivy.app import App
+from kivy.config import Config
+Config.set('graphics', 'resizable', False)
+Config.set('graphics', 'width', '600')
+Config.set('graphics', 'height', '300')
+Config.set('graphics', 'borderless', '1')
+Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
+kivy.require('2.1.0')
 from kivy.lang import Builder
 from kivy.uix.widget import Widget
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.textinput import TextInput
-from kivy.config import Config
+
+
 from kivy.uix.tabbedpanel import TabbedPanel
 
 # Functionality Imports
@@ -23,12 +32,6 @@ from pynput.keyboard import Key, Controller
 if os.name == 'nt':
     from KivyOnTop import register_topmost, unregister_topmost
 # Configuration
-Config.set('graphics', 'resizable', '0')
-Config.set('graphics', 'width', '600')
-Config.set('graphics', 'height', '300')
-Config.set('graphics', 'borderless', '1')
-Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
-kivy.require('2.1.0')
 
 with open("ToadKeep.kv", encoding='utf-8') as f:
     Builder.load_string(f.read())
