@@ -69,6 +69,10 @@ class ToodKeppApp(App):
             print(f"{KeyCode} has been copied.")
         except Exception as e:
             print(e)
+    def InputBoxClear(self, instance):
+        CopyBox = self.root.ids.copybox
+        CopyBox.text = ""
+
 
     def end(self, instance):
         ToodKeppApp.stop(self)

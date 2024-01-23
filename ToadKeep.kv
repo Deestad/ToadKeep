@@ -508,11 +508,20 @@
                     x: self.parent.x
                     size: self.parent.size
                     allow_stretch: True
+            Button:
+                id: clear
+                pos_hint: {'center_x': 0.24, 'top': 0.25}
+                size_hint: (0.150, 0.150)
+                text: "Clear"
+                on_press: app.InputBoxClear(self)
+                color: 0,0,0,1
+                background_normal: 'Button.png'
+                background_color: (1, 1, 1, 1)
             TextInput:
                 id: copybox
                 hint_text: "Type and copy with the buttons!"
-                pos_hint: {'center_x': 0.55, 'top': 0.23}
-                size_hint: 0.70, 0.12
+                pos_hint: {'center_x': 0.67, 'top': 0.23}
+                size_hint: 0.60, 0.12
 
     TabbedPanelItem:
         text: "ASCII"
