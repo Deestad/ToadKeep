@@ -30,19 +30,23 @@ Introducing ToadKeep: Your friendly neighborhood keyboard hero! Tired of sticky 
     ```bash
     pip install -r requirements.txt
     ```
+
 3. Running ToadKeep
    
-  Windows:
-    Run on Command Prompt at ToadKeep's directory
+    ## Windows:
+    ### Run on Command Prompt at ToadKeep's directory:
     ```bash
     python main.py
     ```
-    On Linux:
-    Make the file executable (if needed):
+    ## On Linux:
+    
+    ### Make the file executable (if needed):
+    
     ```bash
     chmod +x toadkeep.py
     ```
-    If chmodded, execute. Else, run from terminal.
+   ### If chmodded, execute. Else, run from terminal.
+    
     ```bash
     python3 main.py
     ```
