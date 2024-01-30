@@ -13,6 +13,7 @@ Introducing ToadKeep: Your friendly neighborhood keyboard hero! Tired of sticky 
 - **Copy and Paste with Toaditude**: ToadKeep lets you snag characters and paste them anywhere you want.
 - 
 - **Cool emojis and emoticons!**: No need to google emojis and emoticons any longer! You can just open ToadKeep and find it right there!
+  
   ![ToadKeep Emoticons](https://i.imgur.com/xHHfNlb.png)
 
 
