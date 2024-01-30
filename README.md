@@ -1,5 +1,5 @@
-## This is Toad Keep.
-### And he wants to help you with your keyboard troubles.
+## It's a frog.
+### And it wants to help you with your keyboard troubles.
 ![ToadKeep](https://th.bing.com/th/id/OIG1.cZ_xnZsNk710tMo9_WqM?w=270&h=270&c=6&r=0&o=5&pid=ImgGn)
 
 ## Overview
