@@ -41,7 +41,7 @@ Introducing ToadKeep: Your friendly neighborhood keyboard hero! Tired of sticky 
 3. Running ToadKeep
    
     ## Windows:
-    ### Run on Command Prompt at ToadKeep's directory:
+    ### Run the exe. You can also run the python file at ToadKeep's directory:
     ```bash
     python main.py
     ```
