@@ -1,6 +1,6 @@
 ## This is Toad Keep.
 ### And he wants to help you with your keyboard troubles.
-![ToadKeep](https://i.imgur.com/a2SLxY3.png)
+![ToadKeep](https://th.bing.com/th/id/OIG1.cZ_xnZsNk710tMo9_WqM?w=270&h=270&c=6&r=0&o=5&pid=ImgGn)
 
 ## Overview
 
@@ -21,6 +21,9 @@ Introducing ToadKeep: Your friendly neighborhood keyboard hero! Tired of sticky 
 
 - **User-Friendly Fun-o-Meter**: The interface is so friendly even your grandma's pet rock could use it. ToadKeep's user-friendliness is off the charts, ensuring everyone can join the keyboard carnival with a grin.
 ## Installation and Usage
+
+![ToadKeep](https://i.imgur.com/a2SLxY3.png)
+
 
 **1. Prerequisites**
 
