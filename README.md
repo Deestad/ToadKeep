@@ -8,6 +8,8 @@ Introducing ToadKeep: Your friendly neighborhood keyboard hero! Tired of sticky 
 
 ## Features
 
+![ToadKeep Interface](https://i.imgur.com/VooMOWE.png)
+
 - **Copy and Paste with Toaditude**: ToadKeep lets you snag characters and paste them anywhere you want.
 
 - **Effortless Efficiency (Say That Three Times Fast)**: Say ta-ta to keyboard tantrums! ToadKeep whizzes in for a quick and hassle-free character input that's smoother than a buttered slide.
